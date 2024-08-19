@@ -6,7 +6,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"./utils"
+	"github.com/adminsynoeun/go_02/blob/main/utils/math.go"
 )
 
 func main() {
