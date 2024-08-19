@@ -12,6 +12,7 @@ func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/person", debugJSON).Methods("GET")
 	r.HandleFunc("/person-01", debugJSON).Methods("GET")
+	r.HandleFunc("/person-02", testing_api).Methods("GET")
 
 	log.Println("Server listening on :8090")
 	log.Fatal(http.ListenAndServe(":8090", r))
